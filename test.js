@@ -19,6 +19,10 @@ score = bowlingScorer.getScore('11111111111111111111', function(error, response)
 	console.log(response);
 });
 
+score = bowlingScorer.getScore('91919191919191919191X', function(error, response) {
+	console.log(response);
+});
+
 /*
 	Partial games
 */
@@ -28,6 +32,14 @@ score = bowlingScorer.getScore('X', function(error, response) {
 });
 
 score = bowlingScorer.getScore('XXX12', function(error, response) {
+	console.log(response);
+});
+
+score = bowlingScorer.getScore('55', function(error, response) {
+	console.log(response);
+});
+
+score = bowlingScorer.getScore('555', function(error, response) {
 	console.log(response);
 });
 
@@ -43,11 +55,19 @@ score = bowlingScorer.getScore('1X', function(error, response) {
 	console.log(response);
 });
 
-score = bowlingScorer.getScore('1//', function(error, response) {
+score = bowlingScorer.getScore('29', function(error, response) {
 	console.log(response);
 });
 
 score = bowlingScorer.getScore('A', function(error, response) {
+	console.log(response);
+});
+
+score = bowlingScorer.getScore('XXXXXXXXXXXXX', function(error, response) {
+	console.log(response);
+});
+
+score = bowlingScorer.getScore('1111111111111111111111', function(error, response) {
 	console.log(response);
 });
 
