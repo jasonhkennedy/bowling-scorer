@@ -2,6 +2,9 @@
 
 var bowlingData = (function() {
 
+	/* 
+		Roll
+	*/
 	function Roll(rollString) {
 		this.string = rollString;
 		this.value = 0;
@@ -25,6 +28,9 @@ var bowlingData = (function() {
 		}
 	}
 	
+	/*
+		Frame
+	*/
 	function Frame(num) {
 		this.num = num;
 		this.roll1 = '';
