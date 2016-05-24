@@ -113,9 +113,16 @@ var bowlingScorer = (function() {
 						
 						frames.push(currentFrame);
 						
-						// Create new frame
-						frameCounter++;
-						currentFrame = bowlingData.newFrame(frameCounter);
+						if (i < rolls.length) {
+							// Still have rolls left to parse
+							if (frameCounter < 10) {
+								// Create new frame
+								frameCounter++;
+								currentFrame = bowlingData.newFrame(frameCounter);
+							} else {
+								throw 'Too many rolls';
+							}
+						}
 					}
 				}
 			}
