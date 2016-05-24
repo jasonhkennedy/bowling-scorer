@@ -42,10 +42,11 @@ var bowlingScorer = (function() {
 			}
 		},
 		scoreSpare: function (currentFrame, nextRoll) {
-			var frameValue = 10;
-			if (nextRoll !== undefined) {
+			var frameValue = 0;
+			if (nextRoll !== '') {
 				// Calculate the frame value
 				// from the next roll
+				frameValue = 10;
 				frameValue += nextRoll.value;
 			}
 			currentFrame.roll2 = '/';
@@ -113,7 +114,7 @@ var bowlingScorer = (function() {
 						
 						frames.push(currentFrame);
 						
-						if (i < rolls.length) {
+						if ( (i+1) < rolls.length) {
 							// Still have rolls left to parse
 							if (frameCounter < 10) {
 								// Create new frame
