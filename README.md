@@ -12,6 +12,9 @@ This was designed to be infinitely scalable. The server requires no persistent s
 
 If the servers were CPU-bound, a caching system could be setup to retrieve games instead of recalculating. A simple start would be in-memory caching, although since the permutations of possible games is very high some sort of persistent storage would be wise. I decided to go with a non-storage implementation to allow easier scaling that doesn't depend on storage implementation.
 
+### Dependencies
+The server application is written in node.js and depends on 'express' and 'body-parser' that can be found in npm.
+
 ## API
 ### POST /v1/games/:rolls
 #### Description
